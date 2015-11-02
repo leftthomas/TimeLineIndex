@@ -202,28 +202,4 @@ public class TimeLineIndex {
         }
         return durations;
     }
-
-
-
-//    public boolean addUser(User user){
-//        if(versionmap.size()==0 || events.size()==0)
-//            return false;
-//        else {
-//            //用来标记要不要更新当前entry的value，默认不更新
-//            boolean isexist=false;
-//            for (Map.Entry entry : versionmap.entrySet()) {
-//                if(isexist){
-//                    entry.setValue((Integer)entry.getValue()+1);
-//                }
-//                //如果新加入的user的时间节点已经有了
-//                if (entry.getKey().equals(user.getStart_time())) {
-//                    entry.setValue((Integer)entry.getValue()+1);
-//                    isexist=true;
-//                }else if(){
-//                    versionmap.
-//                }
-//            }
-//            return  true;
-//        }
-//    }
 }
