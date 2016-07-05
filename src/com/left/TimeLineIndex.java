@@ -142,6 +142,18 @@ public class TimeLineIndex {
 
         List<Duration> durations=new ArrayList<>();
 
+        //用来记录所有对应ID数据的失效时间 key为ID，value为失效时间
+        Map<Long, Long> eventstatus = new HashMap<>();
+
+
+
+
+
+
+
+
+        
+
         for (Map.Entry entry : versionmap.entrySet()) {
 
             Duration duration=new Duration();
@@ -150,7 +162,7 @@ public class TimeLineIndex {
             //一开始将结束时间置为近乎无穷大，方便后续更正操作
             //Long.MAX_VALUE = 9223372036854775807
             duration.setEnd_time(Long.MAX_VALUE);
-            //找到这个版本时一共有多少事件
+            //找到到这个版本时一共有多少事件
             Integer num=(Integer)entry.getValue();
             Integer position=0;
 
